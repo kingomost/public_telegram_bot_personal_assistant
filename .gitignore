@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual Environments
+.env
+.env.*
+!.env.example
+.venv
+env/
+venv/
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Data
+.data/
+
+# Prompt tasks
+prompt_tasks.txt
+
+# Examples for AI
+example/
+
+# SSHFS artifacts
+._*

@@ -1,0 +1,28 @@
+services:
+  telegram-bot:
+    build:
+      context: .
+    image: telegram-bot-personal-assistant:local
+    restart: unless-stopped
+    env_file:
+      - .env
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    volumes:
+      - telegram-bot-data:/app/.data
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    stop_grace_period: 20s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  telegram-bot-data:
+    name: telegram-bot-personal-assistant-data
