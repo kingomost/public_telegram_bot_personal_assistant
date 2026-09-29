@@ -53,3 +53,10 @@ python3.12 -m venv .venv
 python -m pip install --requirement requirements.txt
 python -m unittest discover -s tests -v
 ```
+
+## License
+
+This project is licensed under the [BSD Zero Clause License (0BSD)](LICENSE).
+You may use, copy, modify, and distribute the code for any purpose, including
+commercial use, without attribution requirements. The software is provided
+without warranty.
